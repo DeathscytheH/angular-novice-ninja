@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Mi primer app en angular</title>
+</head>
+<body ng-init="salary=0; percentage=0">
+    Tu salario?
+    <input type="text" ng-model="salary">
+    <br>cuanto inviertes en gadgets?
+    <input type="text" ng-model="percentage">%
+    <br>La cuantidad que gastaras en compras es:
+    <span>{{salary*percentage*0.01 | currency}}</span>
+    <script src="lib/angular/angular.js"></script>
+</body>
+</html>
